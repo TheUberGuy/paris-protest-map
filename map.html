@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b7f366a4a63df0523141f420f30fc55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0b7f366a4a63df0523141f420f30fc55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0b7f366a4a63df0523141f420f30fc55 = L.map(
+                "map_0b7f366a4a63df0523141f420f30fc55",
+                {
+                    center: [48.86, 2.322],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9f09c5fbf2ae86d2e4f85fb49fc469b8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9f09c5fbf2ae86d2e4f85fb49fc469b8.addTo(map_0b7f366a4a63df0523141f420f30fc55);
+        
+    
+            var marker_f9d229a56657934700357deb88ef4afc = L.marker(
+                [48.893, 2.25],
+                {
+}
+            ).addTo(map_0b7f366a4a63df0523141f420f30fc55);
+        
+    
+            var div_icon_d93a336bfea5dddd5bbb63b4f4e7f013 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font:bold 14px sans-serif;background:white;padding:4px;width:360px\u0027\u003eParis: expected protests Fri Oct 23 \u0026 Sat Oct 24, as of Wed Oct 21 8 AM Paris time\u003cbr\u003e\u003cspan style=\u0027font-weight:normal\u0027\u003eCDG Sun Oct 25: no RER B strike announced; RER B night works only Mon-Fri 22:45+. No airport/A1 blockade announced.\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f9d229a56657934700357deb88ef4afc.setIcon(div_icon_d93a336bfea5dddd5bbb63b4f4e7f013);
+            
+    
+            var feature_group_511702edbf8575cc21d1f953245be73c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_be5fc9a7fb4f4cd3640f0cb2ad8dda12 = L.polyline(
+                [[48.8532, 2.3691], [48.8712, 2.3316]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": "10", "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+            poly_line_be5fc9a7fb4f4cd3640f0cb2ad8dda12.bindTooltip(
+                `<div>
+                     Declared Bastille → Opéra march (start/end only; actual streets not published). Europe 1/AFP Oct 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9f9a3925c982433d0a2fc98988158ea8 = L.circle(
+                [48.8674, 2.3636],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 250, "stroke": true, "weight": 3}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+        var popup_a61d95874f74d175bd72a6e1ac1f29d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26280dbb35effd1cecfaac3271eb5bf1 = $(`<div id="html_26280dbb35effd1cecfaac3271eb5bf1" style="width: 100.0%; height: 100.0%;">République curfew 23:00-06:00, station closes 22:00<br>Préfecture arrêté 2026-01382 (Oct 20), renewed; Le Parisien, actu17</div>`)[0];
+                popup_a61d95874f74d175bd72a6e1ac1f29d3.setContent(html_26280dbb35effd1cecfaac3271eb5bf1);
+            
+        
+
+        circle_9f9a3925c982433d0a2fc98988158ea8.bindPopup(popup_a61d95874f74d175bd72a6e1ac1f29d3)
+        ;
+
+        
+    
+    
+            circle_9f9a3925c982433d0a2fc98988158ea8.bindTooltip(
+                `<div>
+                     République curfew 23:00-06:00, station closes 22:00
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2edb23baa0f4a8e230698c37b1fde2ab = L.circle(
+                [48.8615, 2.3475],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 450, "stroke": true, "weight": 3}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+        var popup_b2336efb884b65cb7a202a0069de3200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77beeb426f5f84b091249bd25dc1f351 = $(`<div id="html_77beeb426f5f84b091249bd25dc1f351" style="width: 100.0%; height: 100.0%;">Les Halles/Châtelet curfew 23:00-06:00; Châtelet, Châtelet-Les Halles, Les Halles stations close 22:00<br>Préfecture arrêté 2026-01382 (Oct 20), renewed; Le Parisien, actu17</div>`)[0];
+                popup_b2336efb884b65cb7a202a0069de3200.setContent(html_77beeb426f5f84b091249bd25dc1f351);
+            
+        
+
+        circle_2edb23baa0f4a8e230698c37b1fde2ab.bindPopup(popup_b2336efb884b65cb7a202a0069de3200)
+        ;
+
+        
+    
+    
+            circle_2edb23baa0f4a8e230698c37b1fde2ab.bindTooltip(
+                `<div>
+                     Les Halles/Châtelet curfew 23:00-06:00; Châtelet, Châtelet-Les Halles, Les Halles stations close 22:00
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2b304bed5c41f629adc9f8398d3e38d = L.circleMarker(
+                [48.8532, 2.3691],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+        var popup_c92c35579080c465df4635941f46e8f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_514b60ca26873680d578ce1bd06b87c8 = $(`<div id="html_514b60ca26873680d578ce1bd06b87c8" style="width: 100.0%; height: 100.0%;"><b>Sat Oct 24</b>: Bastille: Gilets jaunes 'Acte II' declared START; CGT Paris & Union étudiante say they'll join<br>Status: ANNOUNCED (declaration filed, not yet approved by Préfecture)<br>Time: time not published<br>Source: Europe 1/AFP, Oct 21 7:50 AM; securmanif.fr<br>6.9 km from hotel</div>`)[0];
+                popup_c92c35579080c465df4635941f46e8f1.setContent(html_514b60ca26873680d578ce1bd06b87c8);
+            
+        
+
+        circle_marker_c2b304bed5c41f629adc9f8398d3e38d.bindPopup(popup_c92c35579080c465df4635941f46e8f1)
+        ;
+
+        
+    
+    
+            var circle_marker_43d646dd87e1d9d31483cf70ca7bc4de = L.circleMarker(
+                [48.8712, 2.3316],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+        var popup_87c65341301332a68c6e84895e769ff6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea776f1f78b99e78e5d192219a723513 = $(`<div id="html_ea776f1f78b99e78e5d192219a723513" style="width: 100.0%; height: 100.0%;"><b>Sat Oct 24</b>: Opéra: declared END of Bastille march<br>Status: ANNOUNCED (declaration filed, not yet approved)<br>Time: afternoon (not published)<br>Source: Europe 1/AFP, Oct 21<br>4.7 km from hotel</div>`)[0];
+                popup_87c65341301332a68c6e84895e769ff6.setContent(html_ea776f1f78b99e78e5d192219a723513);
+            
+        
+
+        circle_marker_43d646dd87e1d9d31483cf70ca7bc4de.bindPopup(popup_87c65341301332a68c6e84895e769ff6)
+        ;
+
+        
+    
+    
+            var circle_marker_c3a3b0fd869b52a1817f0d6afc741742 = L.circleMarker(
+                [48.8674, 2.3636],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62728", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+        var popup_adaea107a1591cae13ecd1568c20ddd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5714f363f5ab0d0533d100f90fef0ec2 = $(`<div id="html_5714f363f5ab0d0533d100f90fef0ec2" style="width: 100.0%; height: 100.0%;"><b>Sat Oct 24</b>: République: Gilets jaunes call + BAS meeting & march (Cameroon) from noon<br>Status: ANNOUNCED (call); route not published<br>Time: from 12:00<br>Source: sortiraparis.com Oct 20; paris.evous.fr Oct 19<br>6.7 km from hotel</div>`)[0];
+                popup_adaea107a1591cae13ecd1568c20ddd7.setContent(html_5714f363f5ab0d0533d100f90fef0ec2);
+            
+        
+
+        circle_marker_c3a3b0fd869b52a1817f0d6afc741742.bindPopup(popup_adaea107a1591cae13ecd1568c20ddd7)
+        ;
+
+        
+    
+    
+            var circle_marker_0a0cc1b389c27cfd1196bc927040f75c = L.circleMarker(
+                [48.87, 2.37],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_511702edbf8575cc21d1f953245be73c);
+        
+    
+        var popup_1393226a19ae421d455607870617165f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2661d55aa263569aeb6ce72b75aec679 = $(`<div id="html_2661d55aa263569aeb6ce72b75aec679" style="width: 100.0%; height: 100.0%;"><b>Fri Oct 23</b>: République: women's rights demonstration<br>Status: REPORTED (2 media mentions, unverified details)<br>Time: time not published<br>Source: Orange Actualités via maniflux.fr<br>7.3 km from hotel</div>`)[0];
+                popup_1393226a19ae421d455607870617165f.setContent(html_2661d55aa263569aeb6ce72b75aec679);
+            
+        
+
+        circle_marker_0a0cc1b389c27cfd1196bc927040f75c.bindPopup(popup_1393226a19ae421d455607870617165f)
+        ;
+
+        
+    
+    
+            feature_group_511702edbf8575cc21d1f953245be73c.addTo(map_0b7f366a4a63df0523141f420f30fc55);
+        
+    
+            var feature_group_66a6a8a4aa1eeea2b69301e7a34151b5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_11005f76b4cbcf87680220edfd8be206 = L.circleMarker(
+                [48.8674, 2.3636],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_dcaef7b2455613f294ad515c2c98753b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4928cad240e37951d881f60a0b891ed2 = $(`<div id="html_4928cad240e37951d881f60a0b891ed2" style="width: 100.0%; height: 100.0%;">Oct 17: Place de la République: clashes, tear gas, water cannon, cars burned, shops looted<br>13:00-17:00<br>Préfecture/AFP, franceinfo, Actu Paris</div>`)[0];
+                popup_dcaef7b2455613f294ad515c2c98753b.setContent(html_4928cad240e37951d881f60a0b891ed2);
+            
+        
+
+        circle_marker_11005f76b4cbcf87680220edfd8be206.bindPopup(popup_dcaef7b2455613f294ad515c2c98753b)
+        ;
+
+        
+    
+    
+            var circle_marker_c71dcd2bba987c9651c096110a3b881a = L.circleMarker(
+                [48.8708, 2.3622],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_f428fc68acfe7d70d819347410d360fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_337020ed0de2e53c8b9eff9164441fae = $(`<div id="html_337020ed0de2e53c8b9eff9164441fae" style="width: 100.0%; height: 100.0%;">Oct 17: Rue Beaurepaire: La Barrique bar set on fire<br>early evening<br>journalist videos, multiple X posts</div>`)[0];
+                popup_f428fc68acfe7d70d819347410d360fe.setContent(html_337020ed0de2e53c8b9eff9164441fae);
+            
+        
+
+        circle_marker_c71dcd2bba987c9651c096110a3b881a.bindPopup(popup_f428fc68acfe7d70d819347410d360fe)
+        ;
+
+        
+    
+    
+            var circle_marker_58720129776113fae8c92295ad12b1f2 = L.circleMarker(
+                [48.8655, 2.3555],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_72611fec604ee6ffd69ab3a0a4bcdb48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fa4d7fbbab6f81c09742cf482dc8e3a = $(`<div id="html_9fa4d7fbbab6f81c09742cf482dc8e3a" style="width: 100.0%; height: 100.0%;">Oct 17: Rue de Turbigo: e-bikes piled up and burned<br>afternoon<br>Actu Paris/AFP</div>`)[0];
+                popup_72611fec604ee6ffd69ab3a0a4bcdb48.setContent(html_9fa4d7fbbab6f81c09742cf482dc8e3a);
+            
+        
+
+        circle_marker_58720129776113fae8c92295ad12b1f2.bindPopup(popup_72611fec604ee6ffd69ab3a0a4bcdb48)
+        ;
+
+        
+    
+    
+            var circle_marker_51c3f85bc14cae5e1188bb2e881d1344 = L.circleMarker(
+                [48.8622, 2.347],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_c14cd71daa92aa88d086d335907618b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab8581076b0638a1bc2e5e1f821e5880 = $(`<div id="html_ab8581076b0638a1bc2e5e1f821e5880" style="width: 100.0%; height: 100.0%;">Oct 17: Les Halles: riot unit CRS 8 sent in<br>~16:45-17:00<br>Préfecture via Actu Paris, Europe 1</div>`)[0];
+                popup_c14cd71daa92aa88d086d335907618b7.setContent(html_ab8581076b0638a1bc2e5e1f821e5880);
+            
+        
+
+        circle_marker_51c3f85bc14cae5e1188bb2e881d1344.bindPopup(popup_c14cd71daa92aa88d086d335907618b7)
+        ;
+
+        
+    
+    
+            var circle_marker_187ceeadb151f6516a27138ced759f99 = L.circleMarker(
+                [48.8712, 2.3316],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_01ab9193f8a48b807cc801510b886f47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_720743111368171afc11fa0c47b75e6d = $(`<div id="html_720743111368171afc11fa0c47b75e6d" style="width: 100.0%; height: 100.0%;">Oct 17: Opéra: police charge dispersed wildcat march<br>~14:10<br>multiple X videos, AFP</div>`)[0];
+                popup_01ab9193f8a48b807cc801510b886f47.setContent(html_720743111368171afc11fa0c47b75e6d);
+            
+        
+
+        circle_marker_187ceeadb151f6516a27138ced759f99.bindPopup(popup_01ab9193f8a48b807cc801510b886f47)
+        ;
+
+        
+    
+    
+            var circle_marker_7038c9bef7f3a3f83544d4427d52b461 = L.circleMarker(
+                [48.8687, 2.3412],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_2d2dcfbedcc5f3a43a8cddb7ab64aefe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ad17dd614d4c0723ed3dfeb17583e6e = $(`<div id="html_1ad17dd614d4c0723ed3dfeb17583e6e" style="width: 100.0%; height: 100.0%;">Oct 17: 2nd arr. (Bourse): protesters kettled<br>~16:55<br>Le Média (X)</div>`)[0];
+                popup_2d2dcfbedcc5f3a43a8cddb7ab64aefe.setContent(html_1ad17dd614d4c0723ed3dfeb17583e6e);
+            
+        
+
+        circle_marker_7038c9bef7f3a3f83544d4427d52b461.bindPopup(popup_2d2dcfbedcc5f3a43a8cddb7ab64aefe)
+        ;
+
+        
+    
+    
+            var circle_marker_438a3f9fd68bfcfce36377ba8f504b87 = L.circleMarker(
+                [48.87, 2.3245],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_3818dd85c9ad2c9f019f7f0b5b4bfa61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57b7ba9b7f5ad396001df01abbc7d0a9 = $(`<div id="html_57b7ba9b7f5ad396001df01abbc7d0a9" style="width: 100.0%; height: 100.0%;">Oct 17: Madeleine: looting, clashes still going<br>17:00-19:00+<br>Actu Paris, Europe 1</div>`)[0];
+                popup_3818dd85c9ad2c9f019f7f0b5b4bfa61.setContent(html_57b7ba9b7f5ad396001df01abbc7d0a9);
+            
+        
+
+        circle_marker_438a3f9fd68bfcfce36377ba8f504b87.bindPopup(popup_3818dd85c9ad2c9f019f7f0b5b4bfa61)
+        ;
+
+        
+    
+    
+            var circle_marker_6528e0c41666312e4a54f81719d39cfa = L.circleMarker(
+                [48.8689, 2.3216],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_c4b488aae6bb4e67594e99e845ba92b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c97ec22fd03485f3bb3b91d9939a579c = $(`<div id="html_c97ec22fd03485f3bb3b91d9939a579c" style="width: 100.0%; height: 100.0%;">Oct 17: Élysée approach (Boissy-d'Anglas): wildcat march pushed back<br>~16:00-17:00<br>Préfecture, franceinfo</div>`)[0];
+                popup_c4b488aae6bb4e67594e99e845ba92b6.setContent(html_c97ec22fd03485f3bb3b91d9939a579c);
+            
+        
+
+        circle_marker_6528e0c41666312e4a54f81719d39cfa.bindPopup(popup_c4b488aae6bb4e67594e99e845ba92b6)
+        ;
+
+        
+    
+    
+            var circle_marker_b748488907270b9f72733c2339b1bd61 = L.circleMarker(
+                [48.8668, 2.3048],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_cefbe26536b23d37f0676facc72c5095 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_381da8cdfd80301ba16cc8b6d7c784a1 = $(`<div id="html_381da8cdfd80301ba16cc8b6d7c784a1" style="width: 100.0%; height: 100.0%;">Oct 17: Avenue Montaigne: Céline store looted, barricades<br>~17:30-18:15<br>Le Parisien, Actu Paris, many X posts</div>`)[0];
+                popup_cefbe26536b23d37f0676facc72c5095.setContent(html_381da8cdfd80301ba16cc8b6d7c784a1);
+            
+        
+
+        circle_marker_b748488907270b9f72733c2339b1bd61.bindPopup(popup_cefbe26536b23d37f0676facc72c5095)
+        ;
+
+        
+    
+    
+            var circle_marker_9b11cd1a41e6f6838c0d2240f5a4fa57 = L.circleMarker(
+                [48.8665, 2.314],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_d9eaebb54089e309cc8548063e4b736d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b4d9eff885e64a98f592ca335d0b69e = $(`<div id="html_3b4d9eff885e64a98f592ca335d0b69e" style="width: 100.0%; height: 100.0%;">Oct 17: Lower Champs-Élysées: banned gathering<br>~17:45<br>Le Parisien, franceinfo</div>`)[0];
+                popup_d9eaebb54089e309cc8548063e4b736d.setContent(html_3b4d9eff885e64a98f592ca335d0b69e);
+            
+        
+
+        circle_marker_9b11cd1a41e6f6838c0d2240f5a4fa57.bindPopup(popup_d9eaebb54089e309cc8548063e4b736d)
+        ;
+
+        
+    
+    
+            var circle_marker_321f4ab1f8043f0d39f21cc0961a364e = L.circleMarker(
+                [48.8656, 2.3212],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_5cab42bcf9a3fcfc4a01bfcc73dbd530 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38e603eba95b4fc7e4c76c94e929875c = $(`<div id="html_38e603eba95b4fc7e4c76c94e929875c" style="width: 100.0%; height: 100.0%;">Oct 17: Concorde: ~200 headed for Assemblée, turned back<br>late afternoon<br>Actu Paris/AFP</div>`)[0];
+                popup_5cab42bcf9a3fcfc4a01bfcc73dbd530.setContent(html_38e603eba95b4fc7e4c76c94e929875c);
+            
+        
+
+        circle_marker_321f4ab1f8043f0d39f21cc0961a364e.bindPopup(popup_5cab42bcf9a3fcfc4a01bfcc73dbd530)
+        ;
+
+        
+    
+    
+            var circle_marker_9c752808fc8b5e8f50fd3b97cf15a644 = L.circleMarker(
+                [48.8675, 2.3294],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_815ef3fe26bbbe1f8c0c047a73f0b201 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9364760295aa508bb1ddc57efc6856d5 = $(`<div id="html_9364760295aa508bb1ddc57efc6856d5" style="width: 100.0%; height: 100.0%;">Oct 17: Place Vendôme / Bd Malesherbes: wildcat marches<br>evening<br>Europe 1</div>`)[0];
+                popup_815ef3fe26bbbe1f8c0c047a73f0b201.setContent(html_9364760295aa508bb1ddc57efc6856d5);
+            
+        
+
+        circle_marker_9c752808fc8b5e8f50fd3b97cf15a644.bindPopup(popup_815ef3fe26bbbe1f8c0c047a73f0b201)
+        ;
+
+        
+    
+    
+            var circle_marker_2684398c68751cf25e8eb5a75a87ed90 = L.circleMarker(
+                [48.8696, 2.3544],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_2a8269e13f6251c55f31c4fcb309a0a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed474fcd98a245bd2b2abe70e4eae9dc = $(`<div id="html_ed474fcd98a245bd2b2abe70e4eae9dc" style="width: 100.0%; height: 100.0%;">Oct 17: Strasbourg-St-Denis: shop attacked (UNCONFIRMED)<br>~17:00<br>single X post</div>`)[0];
+                popup_2a8269e13f6251c55f31c4fcb309a0a0.setContent(html_ed474fcd98a245bd2b2abe70e4eae9dc);
+            
+        
+
+        circle_marker_2684398c68751cf25e8eb5a75a87ed90.bindPopup(popup_2a8269e13f6251c55f31c4fcb309a0a0)
+        ;
+
+        
+    
+    
+            var circle_marker_61b4019d4e269da867e884ab6040c21c = L.circleMarker(
+                [48.8833, 2.3274],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_2d8d4b4b18dc18389c8e7fd3033a8643 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a68444300c881d220d68039969412c8f = $(`<div id="html_a68444300c881d220d68039969412c8f" style="width: 100.0%; height: 100.0%;">Oct 17: Place de Clichy: march end point, dispersed<br>~16:00-17:00<br>franceinfo/Préfecture</div>`)[0];
+                popup_2d8d4b4b18dc18389c8e7fd3033a8643.setContent(html_a68444300c881d220d68039969412c8f);
+            
+        
+
+        circle_marker_61b4019d4e269da867e884ab6040c21c.bindPopup(popup_2d8d4b4b18dc18389c8e7fd3033a8643)
+        ;
+
+        
+    
+    
+            var circle_marker_0ca5589cfe373fa7b4db9b5c5e27f2ba = L.circleMarker(
+                [48.847, 2.4105],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_b270f79eb6cff80ef016e631afef3649 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c667ff952ac8c25bfde4121a5c192c79 = $(`<div id="html_c667ff952ac8c25bfde4121a5c192c79" style="width: 100.0%; height: 100.0%;">Oct 17: Porte de Vincennes: ring road blocked<br>~16:55<br>X journalist posts</div>`)[0];
+                popup_b270f79eb6cff80ef016e631afef3649.setContent(html_c667ff952ac8c25bfde4121a5c192c79);
+            
+        
+
+        circle_marker_0ca5589cfe373fa7b4db9b5c5e27f2ba.bindPopup(popup_b270f79eb6cff80ef016e631afef3649)
+        ;
+
+        
+    
+    
+            var circle_marker_ff283294f3fbc84c64aacea802f563a2 = L.circleMarker(
+                [48.8483, 2.329],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_66a6a8a4aa1eeea2b69301e7a34151b5);
+        
+    
+        var popup_ee46b81368ebe72d8ccf64451c984c7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_982abc92ba65aee2ab55af2458cd5e1f = $(`<div id="html_982abc92ba65aee2ab55af2458cd5e1f" style="width: 100.0%; height: 100.0%;">Oct 17: Rue de Rennes: high-school wildcat march (dispersed)<br>~11:00<br>Préfecture via Europe 1</div>`)[0];
+                popup_ee46b81368ebe72d8ccf64451c984c7c.setContent(html_982abc92ba65aee2ab55af2458cd5e1f);
+            
+        
+
+        circle_marker_ff283294f3fbc84c64aacea802f563a2.bindPopup(popup_ee46b81368ebe72d8ccf64451c984c7c)
+        ;
+
+        
+    
+    
+            var marker_94b550eeaf1332db38c5c0ec2b70c9c2 = L.marker(
+                [48.850637, 2.275293],
+                {
+}
+            ).addTo(map_0b7f366a4a63df0523141f420f30fc55);
+        
+    
+            var icon_81fd3b074aac0a31efbcd6e59022db0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53d4243c8899992e6d59c46ccd1dd52d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d3fea852611a7a218d182906e864dcd = $(`<div id="html_2d3fea852611a7a218d182906e864dcd" style="width: 100.0%; height: 100.0%;">Hotel Auteuil Tour Eiffel, 8/10 Rue Félicien David</div>`)[0];
+                popup_53d4243c8899992e6d59c46ccd1dd52d.setContent(html_2d3fea852611a7a218d182906e864dcd);
+            
+        
+
+        marker_94b550eeaf1332db38c5c0ec2b70c9c2.bindPopup(popup_53d4243c8899992e6d59c46ccd1dd52d)
+        ;
+
+        
+    
+    
+                marker_94b550eeaf1332db38c5c0ec2b70c9c2.setIcon(icon_81fd3b074aac0a31efbcd6e59022db0b);
+            
+    
+            var layer_control_0aabf1b24ff774d40e4fe0e6cc68ac3d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9f09c5fbf2ae86d2e4f85fb49fc469b8,
+                },
+                overlays :  {
+                    "Fri Oct 23 / Sat Oct 24 (expected)" : feature_group_511702edbf8575cc21d1f953245be73c,
+                    "Sat Oct 17 events (past)" : feature_group_66a6a8a4aa1eeea2b69301e7a34151b5,
+                },
+            };
+            let layer_control_0aabf1b24ff774d40e4fe0e6cc68ac3d = L.control.layers(
+                layer_control_0aabf1b24ff774d40e4fe0e6cc68ac3d_layers.base_layers,
+                layer_control_0aabf1b24ff774d40e4fe0e6cc68ac3d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_0b7f366a4a63df0523141f420f30fc55);
+
+        
+</script>
+</html>
